@@ -1,0 +1,18 @@
+{% extends "learning_logs/base.html" %}
+
+{% block header %}
+    <div class="jumbotron">
+        <img src="https://lh3.googleusercontent.com/68owaXQ93lbcoaG0QRaqCg10fHkRewCwDh_ezT7DytAKqknQTzvFpm32U9SCSlkV9C2eEbiVZ2suL5RISRKNf21iy69-LE8YigwwwPdTur-Qx2dOyCiSmrHNCF6M78BgO74FuuaOFPHp6uqwh0ebzM-wvU4Fdt6nog_-XQQOrXk2paD6oN7pxmbx9XHK2ujJpcTdtsAHz29jvpUST-j9O4WFoVacRa6HoMCZd0WqQsunlCYbK0gpQo8F-n6ARuagZ6AahLcMktfhM7zxDFwvy7AOZrZucLi-lasHyA2tj88nljJ5sx-q9mRjmt_mgYQp0gttxlOTt8D3mu076447p2Tdzt0CeH82RMD6JK_rtTNgI_PN3I82gsh5xnLQbMgYmnz-DY7nxL4lMe0XvSBJVydPtle9sCA540rz866KBX7Kq4zove_k-vU5NvOJH2YuXfETESUGelkM5UfsPa-GDRZ_anZu6eQEmzCGLPjKi_qZQH3JwxYFHiqtpkiYs6L9LwdwNa32y4IFA9tcghPFPIeHeY8MpfOoA1sFBIkvTo2-Uw2XpcYuGzgQnebmBh_HsIh9w65wU2J-OKf0cX4jY1Ug-wx7htf8d-eVeZcAp5QDXzriUNCbVSxf-h_G_GIAmzIXwsPJw5bKJZ5ebfZAIJHDeYNYgetts-5ZK3aNWy2gFvtFxtl_fwXJkc8Brw=w1568-h846-no?authuser=0" class="img-fluid" alt="track your learning">
+    </div>
+{% endblock header %}
+
+{% block content %}
+    <h3>
+        <a href="{% url 'users:register' %}">Register an account</a> to make
+        your own Learning Log, and list the topics you're learning about.
+    </h3>
+    <h3>
+        Whenever you learn something new about a topic, make an entry
+        summarizing what you've learned.
+    </h3>
+{% endblock content %}
