@@ -138,23 +138,23 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Heroku settings
-if os.getcwd() == '/app':
-    DATABASES = {
-        'default': dj_database_url.config(default='postgres://localhost')
-    }
+# if os.getcwd() == '/app':
+DATABASES = {
+    'default': dj_database_url.config(default='postgres://localhost')
+}
 
-    # Honor the 'X-Forwarded-Proto' header for request.is_secure().
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Honor the 'X-Forwarded-Proto' header for request.is_secure().
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-    # Allow all host headers.
-    ALLOWED_HOSTS = ['*']
+# Allow all host headers.
+ALLOWED_HOSTS = ['*']
 
-    # Static asset configuration
-    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, 'static'),
-    )
+# Static asset configuration
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
